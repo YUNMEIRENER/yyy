@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=0,maximum-scale=1,minimum-scale=1">
+	<title>Weather Forcast</title>
+    <script src="js/jquery3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/index.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- 当下的天气情况 -->
+	<header>
+		<h1 class="now_city_box">
+		   <span class="dingwei">&#xe61e;</span>
+		   <span class="now_city"></span>
+		   </h1>
+		   <div class="now_air_box">
+		   <span class="now_air_title">空气</span>
+		   <span class="now_air_quality"></span>
+		</div>
+		<h2 class="now_temp">
+			<span class="tm"></span><span>°</span>
+			<span></span>
+		</h2>
+		<h3 class="now_weather">
+			<span></span>
+		</h3>
+		<h4 class="now_wet">
+			<span>湿度23%</span>
+		</h4>
+		<h5 class="now_tip">
+			<span>马上下雪呀，多穿衣服哦 !!❤</span>
+		</h5>
+	</header>
+
+	<!-- 近期两天的天气情况 -->
+	<section class="next">
+		<div class="next_box next_box1">
+			<div class="next_top">
+				<span class="next_date">今天</span>
+				<p class="next_temp">
+					<span class="today_temp_max"></span>/<span class="today_temp_min"></span>°C
+				</p>		
+			</div>
+			<div class="next_bottm">
+				<span class="today_weather"></span>
+				<img src="img/2.png" class="today_img">
+			</div>
+		</div>
+        <div class="next_box next_box2">
+		    <div class="next_top">
+				<span class="next_date">明天</span>
+				<p class="next_temp">
+					<span class="tomorrow_temp_max"></span>/<span class="tomorrow_temp_min"></span>°C
+				</p>		
+			</div>
+			<div class="next_bottm">
+				<span class="tomorrow_weather">晴</span>
+				<img src="img/2.png" class="tomorrow_img">
+			</div>
+	    </div>
+	</section>
+
+	<!-- 未来24小时的天气情况 -->
+	<section class="hours">
+		<ul class="hours_content">
+
+		</ul>
+	</section>
+
+	<!-- 未来七天的天气情况 -->
+	<section class="future">
+		<ul class="future_content">
+
+		</ul>
+		
+	</section>
+
+   <!-- 所有城市地区模块 -->
+     <section class="citys"> 
+     	<div class="search_box">      	
+   		<input type="text" class="search" placeholder="请输入搜索内容">
+   		<span class="confirm">确认</span>
+   	    </div>
+   		<div class="citys_box">
+   		<section>
+   			<h1 class="citys_title">热门城市</h1>
+   			<ul class="citys_list">
+				<li class="wzy">太原</li>
+				<li class="wzy">北京</li>
+				<li class="wzy">上海</li>
+				<li class="wzy">上海</li>
+   			</ul>
+   		</section>
+   	</div>
+   </section>
+</body>
+</html>
