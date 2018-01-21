@@ -52,20 +52,20 @@ header{
 	color: white;
 	text-align: center;
 	font-weight: 400;
-	margin-top: .52rem;
+	margin-top: .20rem;
 	height: 1.29rem;
 	padding-left: .5rem;
 }
 
 .now_weather{
-	font-size: .58rem;
+	font-size: 1rem;
 	color: white;
 	text-align: center;
 	font-weight: 400;
 	margin-top: .20rem;
 }
 .now_wet{
-	font-size: .36rem;
+	font-size: .6rem;
 	color: white;
 	text-align: center;
 	font-weight: 400;
@@ -192,7 +192,7 @@ header{
 
 
 .citys{
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background-color: #f6f6f6;
 	position: fixed;
@@ -203,17 +203,18 @@ header{
 
 .search_box{
 	width: 100%;
-	height: 1.28rem;
+	height: 3rem;
 	background-color: white;
-	padding: 0 .3rem;
+	padding: 0 .4rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+    margin: 10px 5px;
 }
 .search{
-	width: 9rem;
-	height: .87rem;
+	width: 80%;
+	height: 2rem;
 	background-color: #e2e2e2;
 	border: 0;
 	padding-left: 0.3rem;
@@ -227,31 +228,30 @@ header{
 .citys_box{
 	width: 100%;
 	height: 90vh;
-
 	overflow-y: auto;
 	padding: 0 0.3rem;
 }
 
 .citys_title{
-	font-size: .5rem;
+	font-size: 12px;
 	color: #999;
 	line-height: .87rem;
 }
 
-.citys_list li{
-	width: 2.93rem;
-	height: .84rem;
-	list-style-type: none;
+/*.citys_list li{*/
+	/*width: 2.93rem;*/
+	/*height: .84rem;*/
+	/*list-style-type: none;*/
 
-	font-size: .44rem;
-	text-align: center;
-	line-height: .84rem;
-	border: .03rem solid #e0e0e0;
-	border-radius: .1rem;
-	float: left;
-	margin-right: .4rem;
-	margin-bottom: .4rem;
-}
+	/*font-size: .44rem;*/
+	/*text-align: center;*/
+	/*line-height: .44rem;*/
+	/*border: .03rem solid #e0e0e0;*/
+	/*border-radius: .1rem;*/
+	/*float: left;*/
+	/*margin-right: .4rem;*/
+	/*margin-bottom: .4rem;*/
+/*}*/
 ::-webkit-scrollbar{
 	height: 0;
 }
@@ -261,21 +261,26 @@ header{
 }
 
 .citys_listt{
-	width: 2.93rem;
-	height: .84rem;
-	font-size: .44rem;
+	width: 6rem;
+	height: 1.5rem;
+	font-size: 14px;
 	text-align: center;
-	line-height: .84rem;
+	line-height: 1.5rem;
 	border: .03rem solid #e0e0e0;
 	border-radius: .1rem;
 	float: left;
 	margin-right: .4rem;
 	margin-bottom: .4rem;
     list-style-type: none;
+    background-color: #fff;
 }
+
 
 .citys_tile{
 	font-size: .5rem;
 	color: #999;
 	line-height: .87rem;
+}
+.citysss li{
+    width: 70px;
 }
