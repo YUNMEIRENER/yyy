@@ -1,5 +1,5 @@
 let citys, weatherobj;
-
+getFullWeather('太原');
 $.ajax({
     url: "https://www.toutiao.com/stream/widget/local_weather/city/",
     dataType: "jsonp",
@@ -47,10 +47,9 @@ $.ajax({
             $('.citys').css('display', 'none');
         });
     },
-    error: function(){
-    		$('.tm').html('错误');
+    error: function () {
+        $('.tm').html('错误');
     }
-    
 });
 
 
@@ -116,17 +115,17 @@ function week() {
             // 创建元素并添加到页面中
             let week_list = document.createElement('li');
             week_list.className = 'future_temp';
-            let week_time = document.createElement('span');
+            let week_time = document.createElement('div');
             week_time.className = 'week_time';
-            let week_high = document.createElement('span');
+            let week_high = document.createElement('div');
             week_high.className = 'week_high';
-            let week_low = document.createElement('span');
+            let week_low = document.createElement('div');
             week_low.className = 'week_low';
             let week_img = document.createElement('img');
             week_img.className = 'week_img';
-            let week_windc = document.createElement('span');
+            let week_windc = document.createElement('div');
             week_windc.className = 'week_windc';
-            let week_windl = document.createElement('span');
+            let week_windl = document.createElement('div');
             week_windl.className = 'week_windl';
 
             week_list.appendChild(week_time);
@@ -134,11 +133,11 @@ function week() {
             week_list.appendChild(week_high);
             week_list.appendChild(week_windc);
             week_list.appendChild(week_windl);
-            week_list.appendChild(week_low);
+            // week_list.appendChild(week_low);
             $('.future_content').append(week_list);
 
             // 当下的时间week
-            week_time.innerHTML = week_arry[j].date.substring(5, 10);
+            week_time.innerHTML = week_arry[j].date.substring(8, 10) + '日';
             week_img.setAttribute('src', "img/" + week_arry[j].weather_icon_id + ".png");
             week_high.innerHTML = week_arry[j].high_temperature + "°";
             week_windc.innerHTML = week_arry[j].condition;
@@ -173,10 +172,10 @@ $(document).ready(function () {
         let value = $('.search').val();
         console.log(citys);
 
-        if (citys.hasOwnProperty(value)){
+        if (citys.hasOwnProperty(value)) {
             getFullWeather(value);
             return;
-        }else {
+        } else {
             for (let key in citys) {
                 if (citys[key].hasOwnProperty(value)) {
                     console.log('找到');
